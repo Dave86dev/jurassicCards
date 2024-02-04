@@ -1,11 +1,12 @@
 import { ApiResponse, ApiResponseSuccess, ApiResponseError } from "../interfaces"
 
-const local_ROOT = 'http://127.0.0.1:8000/api'
+// const local_ROOT = 'http://127.0.0.1:8000/api'
+const ROOT = 'https://cardsbff-production.up.railway.app/api'
 
 export const bringCards = async (order: string): Promise<ApiResponse> => {
   try {
     const response = await fetch(
-      `${local_ROOT}/cards?sort=${order}`
+      `${ROOT}/cards?sort=${order}`
     )
 
     const data: ApiResponse = await response.json()
