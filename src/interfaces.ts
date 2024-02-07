@@ -4,7 +4,6 @@ export interface Card {
 }
   
 export interface AppState {
-  msg: string
   order: string
   selected: Card
 }

@@ -11,6 +11,7 @@ export const Overview: React.FC = () => {
   const { state, setState } = useContext(AppContext)!;
   const [cards, setCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
+  const [msg, setMsg] = useState<string>("")
   const fetching = useRef(false);
 
   useEffect(() => {
@@ -23,13 +24,13 @@ export const Overview: React.FC = () => {
           if (fetched.success) {
             setCards(fetched.data);
             if (fetched.data.length === 0) {
-              setState(prevState => ({ ...prevState, msg: "No data available." }));
+              setMsg("No data available")
             }
           } else {
-            setState(prevState => ({ ...prevState, msg: fetched.error }));
+            setMsg(fetched.error)
           }
         } catch (error) {
-          setState(prevState => ({ ...prevState, msg: "Error while fetching data." }));
+            setMsg("Error while fetching data")
         } finally {
           setLoading(false);
           fetching.current = false;
@@ -44,7 +45,6 @@ export const Overview: React.FC = () => {
     setState(state => ({
       ...state,
       selected: card,
-      msg: "",
     }));
   };
 
@@ -56,7 +56,6 @@ export const Overview: React.FC = () => {
         </div>
       ) : cards.length > 0 ? (
         <div className="overviewPanel">
-          {/* <div className="titleDesign">Overview</div> */}
           <div className="cardsPanel">
             {cards.map(card => (
               <CardCustom
@@ -71,7 +70,7 @@ export const Overview: React.FC = () => {
         </div>
       ) : (
         <div className="noDataPanel">
-          <p>{state.msg || "Loading data..."}</p>
+          <p>{msg || "Loading data..."}</p>
         </div>
       )}
     </div>

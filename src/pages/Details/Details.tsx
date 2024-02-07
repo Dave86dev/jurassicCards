@@ -11,8 +11,9 @@ export const Details: React.FC = () => {
       <div className="detailsPanel">
         {state.selected.Name !== "" && (
           <div className="detailsData">
-            <div> - {state.selected.Name}</div>
-            <div> - {state.selected.Description}</div>
+            <div className="dinoName">{state.selected.Name}</div>
+            <br />
+            <div>{state.selected.Description}</div>
           </div>
         )}
       </div>

@@ -20,6 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /*background image*/
+    background-image: url('../../assets/trex.png');
+    background-size: cover;
   }
   
   .buttonWiki {
@@ -35,9 +39,6 @@
     color: #080808;
 
     border: 0.2em solid #E71A27;
-
-
-
   }
   
   .buttonWiki:hover {
