@@ -1,6 +1,7 @@
 import { AppContextProvider } from "./context/AppContext";
 
 import { Details } from "./pages/Details/Details";
+import { Controls } from "./pages/Controls/Controls";
 import { Overview } from "./pages/Overview/Overview";
 
 import "./App.css";
@@ -13,6 +14,7 @@ function App() {
         <main>
           <section>
             <Details />
+            <Controls />
           </section>
           <section>
             <Overview />

@@ -11,7 +11,7 @@ export const Details: React.FC = () => {
         <div className="detailsDesign">
             {state.selected.Name !== '' &&
                 <div className="detailsPanel">
-                    <div className="titleDesign">Details</div>
+                    {/* <div className="titleDesign">Details</div> */}
                     <div className="detailsData">
                         <div> - {state.selected.Name}</div>
                         <div> - {state.selected.Description}</div>
