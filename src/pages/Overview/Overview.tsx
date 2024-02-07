@@ -56,7 +56,7 @@ export const Overview: React.FC = () => {
         </div>
       ) : cards.length > 0 ? (
         <div className="overviewPanel">
-          <div className="titleDesign">Overview</div>
+          {/* <div className="titleDesign">Overview</div> */}
           <div className="cardsPanel">
             {cards.map(card => (
               <CardCustom
