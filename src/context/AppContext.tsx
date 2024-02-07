@@ -7,7 +7,6 @@ interface AppContextType {
 }
 
 const initialAppState: AppState = {
-  msg: "",
   order: "",
     selected: {
       Name: "",

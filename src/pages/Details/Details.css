@@ -15,17 +15,24 @@
   
     border: 0.2em solid #E71A27;
     border-radius: 0.5em;
-  }
 
+    background-image: url('../../assets/raptor.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+  }
   
   .detailsData {
-    /* width: 30em; */
     font-size: 1.2em;
     margin-left: 1em;
-  
+    
+    padding-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
   
+  .dinoName {
+    font-weight: bold;
+  }

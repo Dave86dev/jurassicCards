@@ -32,7 +32,7 @@ export const CardCustom: React.FC<CardProps> = ({
 
   return (
     <div className={design} onClick={handleClick}>
-      <div>{truncateString(Name)}</div>
+      <div className="dinoName">{truncateString(Name)}</div>
       <div>{truncateString(Description)}</div>
     </div>
   )
