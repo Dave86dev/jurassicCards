@@ -1,25 +1,42 @@
-## Jurassic Cards 0.1 Beta
+## Jurassic Cards 0.5 Beta
 
-## Index
+<p align="center">
+  <img src="https://i.ibb.co/7ptyYr0/Sin-t-tulo.png" alt="Screen 1" title="Screen 1">
+</p>
 
-- [Dev](#dev)
+## Table of Contents 
+
+- [Stack](#stack)
+- [Production](#production)
+- [Installation](#installation)
+- [Functionality / Code Decisions](#functionality)
+- [Author](#author)
+
+
+## Stack 
+
+<img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"><img src="https://img.shields.io/badge/-Vite-747bff?style=for-the-badge&logo=vite&logoColor=white">
+
+## Production 
 
 <div align="center">
     <a href="https://master.d3j97dls5a1tea.amplifyapp.com/
     "><strong>PRODUCTION LINK</strong></a> 
 </div>
 
-### Dev
+## Installation 
 
-- Used technologies:
+If, however, you prefer to install the application locally on your computer, please feel free to follow the steps outlined below. These will guide you through cloning the repository onto your machine and setting up the app to run.
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TypeScript](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
- 
+```sh
+git clone https://github.com/Dave86dev/jurassiccards
+cd jurassiccards
+npm i
+npm run dev
+```
+
+## Functionality
+
 - The entire project is actually being developed in React using TypeScript, without relying on external libraries or dependencies, aiming to keep the project as independent as possible. The use of libraries such as axios has been dismissed in favor of native fetch methods. I have opted for creating a context through useContext, avoiding the need to install technologies like Redux or MobX for managing the overall state of the application.
 
 ## Contact
