@@ -5,7 +5,8 @@
 - [Dev](#dev)
 
 <div align="center">
-    <a href="https://master.d2mtp39h1hfe2e.amplifyapp.com/"><strong>PRODUCTION LINK</strong></a> 
+    <a href="https://master.d3j97dls5a1tea.amplifyapp.com/
+    "><strong>PRODUCTION LINK</strong></a> 
 </div>
 
 ### Dev
