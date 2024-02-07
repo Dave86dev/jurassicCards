@@ -1,8 +1,8 @@
 .cardDesign {
     height: 8em;
     width: 7em;
-    margin: 0.5em;
-    border: 0.2em solid lightgrey;
+    /* margin: 0.5em; */
+    border: 0.2em solid #080808;
     border-radius: 0.5em;
     transition: 0.3s;
 }
@@ -10,9 +10,10 @@
 .cardDesign:hover {
     cursor: pointer;
     transition: 0.3s;
-    background-color: #f0ead6;
+    background-color: #FBE121;
 }
 
 .cardSelected {
-    border: 0.2em solid brown;
+    border: 0.2em solid #E71A27;
+    background-color: #FBE121;
 }
