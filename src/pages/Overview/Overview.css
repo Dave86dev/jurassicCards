@@ -1,6 +1,6 @@
 .overviewDesign {
     height: 100%;
-    width: 60%;
+    width: 100%;
   
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
   }
   
   .overviewPanel {
-    width: 50em;
+    width: 100%;
   
     display: flex;
     flex-direction: column;
@@ -32,8 +32,10 @@
   }
   
   .cardsPanel {
-    /* width: 30em; */
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    width: 90%;
+    padding-left: 6em;
+    row-gap: 1em;
   }
   

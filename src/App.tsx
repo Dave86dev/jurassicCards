@@ -10,7 +10,7 @@ function App() {
   return (
     <AppContextProvider>
       <div className="App">
-        <header>Jurassic Card. Beta 0.1</header>
+        <header>Jurassic Card. Beta 0.2</header>
         <main>
           <section>
             <Details />
