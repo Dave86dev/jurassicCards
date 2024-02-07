@@ -1,23 +1,21 @@
-import { useContext } from "react"
-import { AppContext } from "../../context/AppContext"
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
-import "./Details.css"
+import "./Details.css";
 
 export const Details: React.FC = () => {
+  const { state } = useContext(AppContext)!;
 
-    const { state } = useContext(AppContext)!
-
-    return(
-        <div className="detailsDesign">
-            {state.selected.Name !== '' &&
-                <div className="detailsPanel">
-                    {/* <div className="titleDesign">Details</div> */}
-                    <div className="detailsData">
-                        <div> - {state.selected.Name}</div>
-                        <div> - {state.selected.Description}</div>
-                    </div>    
-                </div>
-            }
-        </div>
-    )
-}
+  return (
+    <div className="detailsDesign">
+      <div className="detailsPanel">
+        {state.selected.Name !== "" && (
+          <div className="detailsData">
+            <div> - {state.selected.Name}</div>
+            <div> - {state.selected.Description}</div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
