@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
-import { AppState } from "../../interfaces";
 
 import "./Controls.css";
 
