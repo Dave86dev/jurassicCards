@@ -8,11 +8,17 @@ import Spinner from "../../assets/spinner.png";
 import "./Overview.css";
 
 export const Overview: React.FC = () => {
-  const { state, setState } = useContext(AppContext)!;
+  const context = useContext(AppContext);
   const [cards, setCards] = useState<Card[]>([]);
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState<string>("")
   const fetching = useRef(false);
+
+  if (!context) {
+    return <div>Error: falsy AppContext</div>;
+  }
+
+  const { state, setState } = context;
 
   useEffect(() => {
     const bringData = async () => {

@@ -5,7 +5,14 @@ import "./Controls.css"
 // import trex from "../../assets/trex.png"
 
 export const Controls: React.FC = () => {
-  const { state } = useContext(AppContext)!
+
+  const context = useContext(AppContext);
+
+  if (!context) {
+    return <div>Error: falsy AppContext</div>;
+  }
+
+  const { state } = context;
 
   return (
     <div className="controlsDesign">
