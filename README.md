@@ -1,5 +1,9 @@
 ## Jurassic Cards 0.5 Beta
 
+Just emerging from its shell, this small application serves as an alpha version designed to test an idea for a larger project. This explains the simplistic design and the initially limited functionality. 
+
+The primary aim was to create an application using React TypeScript that could effectively manage calls fetched from a Backend for Frontend app, while also employing a robust and scalable context. I'm already developing Jurassic-scale ideas for an application, and this functional beta has smoothly paved the way forward.
+
 <p align="center">
   <img src="https://i.ibb.co/7ptyYr0/Sin-t-tulo.png" alt="Screen 1" title="Screen 1">
 </p>
@@ -37,7 +41,20 @@ npm run dev
 
 ## Functionality
 
-- The entire project is actually being developed in React using TypeScript, without relying on external libraries or dependencies, aiming to keep the project as independent as possible. The use of libraries such as axios has been dismissed in favor of native fetch methods. I have opted for creating a context through useContext, avoiding the need to install technologies like Redux or MobX for managing the overall state of the application.
+As previously mentioned, the entire project is developed in React using TypeScript, deliberately avoiding external libraries or dependencies to maintain as much independence as possible. We have chosen not to use libraries like axios, preferring native fetch methods instead.
+
+The key decision in our development structure was to forego general state managers like Redux Toolkit or Mobx, opting instead for useContext. This strategy is designed to ensure that, even with this choice, the app's overall state remains transparent, streamlined, and capable of scaling.
+
+This fundamental tool enables different views to share a global app state, facilitating cross-information sharing without the need for unnecessary prop spreading or drilling. The app's standout feature is its global state management coupled with the ability to make external calls to a Backend, utilizing a 'Backend for Frontend Structure' (BFF Cards), developed in Laravel PHP. This backend delivers a modeled data array of objects featuring random dinosaurs from an API.
+
+Upon receiving the fetched information, users can click on one of the cards, which then displays a link to an external custom page of the selected dinosaur in the control section. From there, users can navigate to the external Wikipedia page of the chosen dinosaur.
+
+Design-wise, the app is exceedingly simple, offering only a desktop version with a minimalist approach. The primary motivation behind developing this app was to explore the scalability of useContext in a React TypeScript project and to inspire the development of a new, dinosaur-themed project. I aim to develop this project without it taking 65 million years, and I look forward to sharing it with everyone soon.
+
+I promise it will be worth the wait.
+
+Welcome...to Jurassic Cards. ;)
+
 
 ## Contact
 
